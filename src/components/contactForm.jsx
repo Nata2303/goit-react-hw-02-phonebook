@@ -18,15 +18,7 @@ const ContactForm = ({ onAddContact }) => {
 
   const handleSubmit = event => {
     event.preventDefault();
-
-    const contact = {
-      id: uuidv4(),
-      name,
-      number,
-    };
-
     onAddContact(name, number);
-
     setName('');
     setNumber('');
   };
