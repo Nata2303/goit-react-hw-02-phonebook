@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { v4 as uuidv4 } from 'uuid';
+// import { v4 as uuidv4 } from 'uuid';
 import style from './contactForm.module.css'
 
 
@@ -18,7 +18,15 @@ const ContactForm = ({ onAddContact }) => {
 
   const handleSubmit = event => {
     event.preventDefault();
+
+    // const contact = {
+    //   id: uuidv4(),
+    //   name,
+    //   number,
+    // };
+
     onAddContact(name, number);
+
     setName('');
     setNumber('');
   };
