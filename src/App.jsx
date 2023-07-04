@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import ContactForm from './components/contactForm';
 import ContactList from './components/ContactList';
 import Filter from './components/filter';
-import { nanoid } from 'nanoid';
 import style from './app.module.css'
 
 const App = () => {
