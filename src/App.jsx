@@ -14,6 +14,7 @@ const App = () => {
   ]);
    const [filter, setFilter] = useState('');
 
+  
   const addContact = (name, number) => {
     const contact = {
       id: `id-${contacts.length + 1}`,
